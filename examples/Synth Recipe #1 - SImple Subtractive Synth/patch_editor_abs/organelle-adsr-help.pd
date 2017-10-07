@@ -1,0 +1,23 @@
+#N canvas 0 22 613 460 10;
+#X obj 26 383 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 24 108 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 26 290 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 20 10 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 25 296 INPUTS:;
+#X text 24 113 CONTROLS:;
+#X text 27 389 OUTPUTS:;
+#X text 26 419 OUT - output;
+#X text 24 144 A - controls the attack time.;
+#X obj 432 10 organelle-adsr;
+#X text 24 9 ORGANELLE-ADSR - ENEVELOPE GENERATOR;
+#X text 24 45 The "organelle-adsr" module is an attack-decay-sustain-release
+envelope generator which is hardwired to sense the Organelle's keyboard
+and will trigger when you press any of the note keys on the unit.;
+#X text 24 180 D - controls the decay time;
+#X text 24 216 S - controls the sustain level;
+#X text 24 252 R - controls the relase time;
+#X text 30 338 none;

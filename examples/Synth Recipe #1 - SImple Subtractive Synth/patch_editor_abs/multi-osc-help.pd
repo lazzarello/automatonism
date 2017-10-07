@@ -1,0 +1,80 @@
+#N canvas 0 22 1229 711 10;
+#X obj 433 10 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 21 157 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 19 451 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 20 10 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 23 457 INPUTS:;
+#X text 25 165 CONTROLS:;
+#X text 436 14 OUTPUTS:;
+#X obj 843 11 multi-osc;
+#X text 24 15 MULTI OSCILLATOR:;
+#X obj 434 70 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 438 78 SYNTHESIS MODELS:;
+#X text 435 109 2OP-FM - a classic phase modulation 2 operator FM synth.
+Control over FM Index and Ratio.;
+#X text 433 148 RINGMOD - three ringmodulated sinewaves. Control over
+pitch.;
+#X text 434 171 XFADE - this model uses a squarewave oscillator to
+crossfade at audiorate between two waveforms. WAVE slider changes the
+waves which are being crossfaded and RATE sets the frequency of the
+modulating squarewave.;
+#X text 431 240 ANALOG-SAW - this models a subrtactive sawtooth synth
+with control over filter cutoff and q.;
+#X text 25 198 PITCH - pitch slider goes from low frequency range \,
+very slow to fast oscillation.;
+#X text 21 50 The "multi-osc" module is a wavetable oscillator with
+several synthesis modes packed into one module. There are two parameter
+controls for each synthesis type and as you select synthesis model
+with the SYNTHESIS slider you can see the labels for TIMBRE 1 & 2 changing
+accordingly. Notice Synthesis models like KARPLUS or DRUM which have
+a red canvas requires a trigger/gate signal at the TRIG input to produce
+sound.;
+#X text 23 231 TIMBRE1 - controls a synthesis parameter depending on
+the state of the SYNTHESIS slider. The label right of the slider changes
+when synthesis mode is being changed.;
+#X text 23 287 TIMBRE2 - //same as above//;
+#X text 24 310 CV1 - attenueverter for incoming CV at the TIMBRE1(CV1)
+input-;
+#X text 24 342 CV2 - attenuator for incoming CV at the TMBRE2(CV2)
+input;
+#X text 23 577 TRIG - trigger/gate input to trigger sound when using
+modes with red canvas like KARPLUS and DRUM.;
+#X text 23 375 FM-/+ - attenueverter for signal at the FM-/+ input
+;
+#X text 22 406 SYNTHESIS - slider that changes current synthesis-mode.
+The canvas above the oscilloscope changes label as well as TIMBRE1
+&2 sliders.;
+#X text 23 487 PITCH - pitch cv input;
+#X text 23 517 TIMBRE1(CV1) - input for cv control of the TIMBRE1 parameter
+;
+#X text 23 547 TIMBRE2(CV2) - input for cv control of the TIMBRE2 parameter
+;
+#X text 23 620 SYNTHESIS - input for cv control of active synthesis
+mode;
+#X text 23 650 FM-/+ - frequency modulation cv input;
+#X text 436 44 OUT - output;
+#X text 430 285 ANALOG SQUARE - this models a subrtactive squarewave
+synth with control over filter cutoff and q.;
+#X text 428 334 WAVETABLE1 - wavetable with 16 waveforms. Morph smoothly
+between waveforms with SCAN and COLOR controls the brilliance of the
+tone. WAVETABLE1 consists of 16 sinusoid shapes.;
+#X text 428 399 WAVETABLE2 - wavetable with 16 waveforms. Morph smoothly
+between waveforms with SCAN and COLOR controls the brilliance of the
+tone. WAVETABLE2 consists of variations of sinusoid \, triangeloids
+\, rising ramps and squarewaves;
+#X text 429 465 WAVETABLE3 - wavetable with 16 waveforms. Morph smoothly
+between waveforms with SCAN and COLOR controls the brilliance of the
+tone. WAVETABLE3 is a collection of harsher \, more aggressive waveforms
+rich in harmonic content;
+#X text 428 561 KARPLUS - simple karplus strong adaptation. Control
+over DAMP and RESONANCE. Needs a trigger/gate at the TRIG input to
+make sound.;
+#X text 427 616 DRUM - drum synth model for bass drums and toms. Control
+over envelope modulation of the frequency and decay length. Needs a
+trigger/gate at the TRIG input to make sound.;
+#X text 430 534 VOSIM - free adaptation of vosim synthesis.;
