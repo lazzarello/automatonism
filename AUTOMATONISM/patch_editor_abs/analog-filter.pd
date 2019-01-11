@@ -6,7 +6,7 @@
 #X obj 817 513 line~;
 #X text 786 198 RESONANCE;
 #X obj 106 164 hsl 128 15 0 127 0 1 \$0-analog-filter-fm-/+-s \$0-analog-filter-fm-/+-r
-FM-/+ 133 7 0 10 -150893 -1 -1 12700 1;
+FM-/+ 133 7 0 10 -150893 -1 -1 9800 1;
 #X obj 517 102 / 127;
 #X text 515 57 CUTOFF;
 #X obj 802 649 delwrite~ \$0-q-feedback 1;
@@ -20,12 +20,12 @@ FM-/+ 133 7 0 10 -150893 -1 -1 12700 1;
 #X obj 517 77 r \$0-analog-filter-cutoff-s;
 #X text 620 169 "ANALOG" FLUX;
 #X obj 106 134 hsl 128 15 0 127 0 1 \$0-analog-filter-cutoff-s \$0-analog-filter-cutoff-r
-CUTOFF 133 7 0 10 -262144 -1 -1 0 1;
+CUTOFF 133 7 0 10 -262144 -1 -1 5000 1;
 #X obj 788 213 r \$0-analog-filter-q-s;
 #X text 297 78 SIGNAL IN;
 #X text 725 86 FM CV IN;
 #X obj 106 149 hsl 128 15 0 127 0 1 \$0-analog-filter-q-s \$0-analog-filter-q-r
-Q 133 7 0 10 -262144 -1 -1 7000 1;
+Q 133 7 0 10 -262144 -1 -1 4600 1;
 #X obj 735 107 inlet~;
 #X obj 735 129 *~ 5000;
 #X obj 735 190 *~;

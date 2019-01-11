@@ -2,25 +2,25 @@
 #X obj 107 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan1-s \$0-maestro4-pan1-r
 PAN1 0 25 0 10 -262144 -1 -1 1300 1;
 #X obj 104 155 vsl 17 80 1.27 127 1 1 \$0-maestro4-ch1-s \$0-maestro4-ch1-r
-CH1 -1 -9 0 10 -262144 -1 -1 7900 1;
+CH1 -1 -9 0 10 -262144 -1 -1 5400 1;
 #X obj 123 155 vu 15 80 \$0-maestro4-ch1-meter-r empty -1 -8 0 10 -66577
 -1 0 0;
 #X obj 152 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan2-s \$0-maestro4-pan2-r
 PAN2 0 25 0 10 -262144 -1 -1 1400 1;
 #X obj 149 155 vsl 17 80 0 127 0 1 \$0-maestro4-ch2-s \$0-maestro4-ch2-r
-CH2 -1 -9 0 10 -262144 -1 -1 5800 1;
+CH2 -1 -9 0 10 -262144 -1 -1 4675 1;
 #X obj 168 155 vu 15 80 \$0-maestro4-ch2-meter-r empty -1 -8 0 10 -66577
 -1 0 0;
 #X obj 197 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan3-s \$0-maestro4-pan3-r
-PAN3 0 25 0 10 -262144 -1 -1 1500 1;
+PAN3 0 25 0 10 -262144 -1 -1 1300 1;
 #X obj 194 155 vsl 17 80 0 127 0 1 \$0-maestro4-ch3-s \$0-maestro4-ch3-r
-CH3 -1 -9 0 10 -262144 -1 -1 6300 1;
+CH3 -1 -9 0 10 -262144 -1 -1 3703 1;
 #X obj 213 155 vu 15 80 \$0-maestro4-ch3-meter-r empty -1 -8 0 10 -66577
 -1 0 0;
 #X obj 242 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan4-s \$0-maestro4-pan4-r
-PAN4 0 25 0 10 -262144 -1 -1 1400 1;
+PAN4 0 25 0 10 -262144 -1 -1 1300 1;
 #X obj 239 155 vsl 17 80 0 127 0 1 \$0-maestro4-ch4-s \$0-maestro4-ch4-r
-CH4 -1 -9 0 10 -262144 -1 -1 7900 1;
+CH4 -1 -9 0 10 -262144 -1 -1 3703 1;
 #X obj 258 155 vu 15 80 \$0-maestro4-ch4-meter-r empty -1 -8 0 10 -66577
 -1 0 0;
 #X obj 309 155 vu 15 80 \$0-maestro4-meter-left-r empty -1 -8 0 10

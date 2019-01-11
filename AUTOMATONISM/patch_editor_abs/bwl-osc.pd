@@ -12,7 +12,7 @@
 #X obj 107 177 hsl 128 15 0 127 0 1 \$0-bwl-osc-fm-att-s \$0-bwl-osc-fm-att-r
 FM 133 7 0 10 -158136 -1 -1 0 1;
 #X obj 107 132 hsl 128 15 0 127 0 1 \$0-bwl-osc-pitch-s \$0-bwl-osc-pitch-r
-PITCH 133 7 0 10 -262144 -1 -1 0 1;
+PITCH 133 7 0 10 -262144 -1 -1 7300 1;
 #X obj 105 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 -262144 -66577 0
 ;
 #X obj 181 109 cnv 5 5 5 empty empty WSHAPE 0 0 0 8 -262144 -120682
@@ -24,12 +24,12 @@ PITCH 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 104 124 cnv 5 5 5 empty empty BWL-OSC 0 0 0 12 -262144 -66577
 0;
 #X obj 93 361 pack 0 50;
-#X obj 240 200 cnv 5 5 5 empty \$0-waveform-gui-r SINE 0 0 0 10 -262144
+#X obj 240 200 cnv 5 5 5 empty \$0-waveform-gui-r SAW 0 0 0 10 -262144
 -66577 0;
 #X obj 107 147 hsl 128 15 0 127 0 1 \$0-bwl-osc-pwidth-s \$0-bwl-osc-pwidth-r
 WSHAPE 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 107 162 hsl 128 15 0 127 0 1 \$0-bwl-osc-cv-att-s \$0-bwl-osc-cv-att-r
-CV 133 7 0 10 -158136 -1 -1 0 1;
+CV 133 7 0 10 -158136 -1 -1 7000 1;
 #X obj 480 372 * 0.00787402;
 #X obj 480 394 * 2;
 #X obj 105 206 cnv 5 5 5 empty empty OUT 0 0 0 8 -262144 -66577 0;
@@ -37,8 +37,8 @@ CV 133 7 0 10 -158136 -1 -1 0 1;
 #X msg 679 522 1 0 0 0;
 #X obj 679 498 t b b;
 #X obj 177 192 hradio 15 1 1 4 \$0-bwl-osc-wform-s \$0-bwl-osc-wform-r
-empty 65 7 0 10 -262144 -1 -1 0;
-#X obj 175 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
+empty 65 7 0 10 -262144 -1 -1 2;
+#X obj 175 124 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
 -66577 0;
 #X obj 938 588 s \$0-waveform-gui-r;
 #X obj 938 541 makefilename %s;
@@ -392,7 +392,7 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X connect 21 0 20 0;
 #X connect 24 0 21 0;
 #X restore 317 71 pd wavetables;
-#N canvas 0 22 749 750 sawtest 0;
+#N canvas 0 22 749 750 sawtest 1;
 #X obj 94 62 inlet~;
 #X obj 94 707 outlet~;
 #X obj 142 691 switch~;
@@ -651,7 +651,6 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X connect 35 0 29 0;
 #X connect 37 0 10 0;
 #X restore 93 604 pd sinetest;
-#X obj 93 319 clip 0 90;
 #X obj 376 248 *~ -1;
 #X obj 342 221 inlet~;
 #X obj 679 14 r \$0-bwl-osc-wform-s;
@@ -839,7 +838,8 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X connect 14 0 7 0;
 #X connect 15 0 9 0;
 #X restore 318 47 pd parameter-nudging-system;
-#X connect 0 0 61 0;
+#X obj 93 319 clip 0 90;
+#X connect 0 0 83 0;
 #X connect 0 1 3 0;
 #X connect 1 0 5 0;
 #X connect 2 0 16 0;
@@ -869,29 +869,29 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X connect 36 0 37 0;
 #X connect 36 1 40 0;
 #X connect 37 0 39 0;
-#X connect 38 0 80 0;
-#X connect 38 1 79 0;
-#X connect 38 2 78 0;
-#X connect 38 3 77 0;
-#X connect 39 0 76 0;
-#X connect 39 1 75 0;
-#X connect 39 2 74 0;
-#X connect 39 3 73 0;
+#X connect 38 0 79 0;
+#X connect 38 1 78 0;
+#X connect 38 2 77 0;
+#X connect 38 3 76 0;
+#X connect 39 0 75 0;
+#X connect 39 1 74 0;
+#X connect 39 2 73 0;
+#X connect 39 3 72 0;
 #X connect 40 0 32 0;
 #X connect 41 0 43 0;
 #X connect 41 1 44 0;
-#X connect 42 0 72 0;
-#X connect 42 1 71 0;
-#X connect 42 2 70 0;
-#X connect 42 3 69 0;
+#X connect 42 0 71 0;
+#X connect 42 1 70 0;
+#X connect 42 2 69 0;
+#X connect 42 3 68 0;
 #X connect 43 0 42 0;
 #X connect 44 0 32 0;
 #X connect 45 0 47 0;
 #X connect 45 1 48 0;
-#X connect 46 0 68 0;
-#X connect 46 1 67 0;
-#X connect 46 2 66 0;
-#X connect 46 3 65 0;
+#X connect 46 0 67 0;
+#X connect 46 1 66 0;
+#X connect 46 2 65 0;
+#X connect 46 3 64 0;
 #X connect 47 0 46 0;
 #X connect 48 0 32 0;
 #X connect 49 0 4 0;
@@ -903,13 +903,13 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X connect 58 0 4 0;
 #X connect 59 0 4 0;
 #X connect 60 0 4 0;
-#X connect 61 0 19 0;
-#X connect 62 0 49 1;
-#X connect 62 0 59 1;
-#X connect 62 0 60 1;
-#X connect 63 0 62 0;
-#X connect 63 0 58 1;
-#X connect 64 0 26 0;
-#X connect 81 0 23 0;
-#X connect 82 0 0 0;
+#X connect 61 0 49 1;
+#X connect 61 0 59 1;
+#X connect 61 0 60 1;
+#X connect 62 0 61 0;
+#X connect 62 0 58 1;
+#X connect 63 0 26 0;
+#X connect 80 0 23 0;
+#X connect 81 0 0 0;
+#X connect 83 0 19 0;
 #X coords 0 -1 1 1 190 112 2 100 100;
