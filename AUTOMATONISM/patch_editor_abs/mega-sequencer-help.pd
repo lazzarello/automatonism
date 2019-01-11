@@ -40,7 +40,7 @@ RDM-PATTERN that will supply new values randomly to all the steps.
 The button RESET-TOGGLES resets all random-step toggles to zero. The
 MEGA-SEQUENCER can store and recall 4 sequences. Click any of the four
 WRITE slots to store in slot 1-4 and click any of the LOAD slots to
-recall a stored sequence. SToring sequences with different SCALE and
+recall a stored sequence. Storing sequences with different SCALE and
 XPOSE sequences can create some quite complex variations. You can step
 through the stored patterns with a trigger/gate signal at the LOAD(1-4)
 input.;

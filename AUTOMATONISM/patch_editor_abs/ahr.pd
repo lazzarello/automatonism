@@ -174,7 +174,7 @@ H 4 -9 0 10 -262144 -1 -1 200 1;
 #X obj 71 616 *~;
 #X obj 560 541 s \$0-instance-num;
 #X obj 560 493 makefilename %d;
-#X obj 184 126 cnv 5 5 5 empty \$0-instance-num 2 0 0 0 12 -262144
+#X obj 184 126 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
 -66577 0;
 #X msg 560 518 label \$1;
 #X obj 12 40 threshold~ 0.99 0 1 0;

@@ -66,7 +66,7 @@
 #X msg 261 419 29999;
 #X msg 278 450 59999;
 #X obj 105 149 hradio 15 1 0 8 store-location-s store-location-r STORE
-0 -8 0 10 -262144 -1 -1 1;
+0 -8 0 10 -262144 -1 -1 5;
 #X obj 105 181 hradio 15 1 0 8 recall-location-s recall-location-r
 RECALL 0 -8 0 10 -262144 -1 -1 0;
 #X obj 793 420 r store-location-s;

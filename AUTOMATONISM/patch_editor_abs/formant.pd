@@ -86,7 +86,7 @@
 Q 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 109 279 t f f f;
 #X obj 105 136 hsl 128 15 0 127 0 1 \$0-formant-formants-s \$0-formant-formants-r
-VOWELS 133 7 0 10 -262144 -1 -1 2900 1;
+VOWELS 133 7 0 10 -262144 -1 -1 6200 1;
 #X obj 52 457 vcf~ 207 5;
 #X obj 52 501 vcf~ 207 5;
 #X obj 53 558 vcf~ 207 5;

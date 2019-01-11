@@ -98,7 +98,7 @@ DRY 133 7 0 10 -262144 -1 -1 7500 1;
 #X restore 374 48 pd state-saving-multiple-instances;
 #X obj 374 125 s \$0-instance-num;
 #X obj 374 77 makefilename %d;
-#X obj 167 129 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
+#X obj 167 129 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
 -66577 0;
 #X msg 374 102 label \$1;
 #N canvas 81 22 1117 745 state-saving-via-preset-manager-module 0;

@@ -1,9 +1,9 @@
-Fork of Automatonism modular synth system for Pure Data
+# Automatism
 
-https://www.automatonism.com/
+> Version 2.1
 
-Use the language of modular synthesis without all the wires and inconsistent electrical performance!
+Fork of [Automatonism](https://www.automatonism.com/) by A modular synth system for Pure Data.
 
-Other cool code on github
+_Automatonism_ is the name of both the software and the creative output of its developer, [Johan Eriksson](https://www.automatonism.com/bio/). A PhD student at Birmingham Conservatoire, UK, Eriksson works at the intersection of composition, performance and instrument design.
 
-https://github.com/megalon/pd-AUTOMATONISM-sampler
+> Automatonism is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
